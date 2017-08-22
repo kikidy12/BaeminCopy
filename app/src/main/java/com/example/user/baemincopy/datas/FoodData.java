@@ -7,5 +7,5 @@ import java.io.Serializable;
  */
 
 public class FoodData implements Serializable{
-
+// 데이터 추가해야해
 }
