@@ -12,4 +12,6 @@ public class FoodData implements Serializable{
 
     /// 이제 할줄알아
 
+    //추가추가추가
+
 }
