@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
+    tools:openDrawer="start"
     tools:context="com.example.user.baemincopy.MainActivity">
 
     <LinearLayout
@@ -28,36 +29,40 @@
                 android:layout_width="match_parent"
                 android:theme="@style/AppTheme.AppBarOverlay">
 
+
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="#3F3B32"
-                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:padding="3dp"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/lacationTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="종로3가 137-3"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.Toolbar>
 
             </android.support.design.widget.AppBarLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|right"
-                android:layout_marginRight="5dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:padding="3dp"
-                    android:src="@mipmap/ic_launcher" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="종로3가 137-3"
-                    android:textColor="#FFFFFF"
-                    android:textSize="13sp" />
-            </LinearLayout>
 
         </FrameLayout>
         <LinearLayout
@@ -70,11 +75,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <ImageView
-                    android:layout_weight="1"
-                    android:src="@drawable/chicken"
+                    android:id="@+id/imageView2"
                     android:layout_width="0dp"
-                    android:layout_height="150dp" />
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/chicken" />
+
                 <ImageView
                     android:layout_weight="1"
                     android:src="@drawable/china"
@@ -134,6 +142,7 @@
             android:orientation="vertical">
             <include layout="@layout/nav_header_main"/>
             <TextView
+                android:layout_marginRight="1dp"
                 android:textColor="#FFFFFF"
                 android:background="#2AC1BC"
                 android:paddingTop="10dp"
@@ -225,6 +234,14 @@
                     </LinearLayout>
                 </TableRow>
             </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
         </LinearLayout>
 
     </android.support.design.widget.NavigationView>
