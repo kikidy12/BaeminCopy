@@ -111,7 +111,6 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageView"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_weight="1"
@@ -135,115 +134,13 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
             <include layout="@layout/nav_header_main"/>
-            <TextView
-                android:layout_marginRight="1dp"
-                android:textColor="#FFFFFF"
-                android:background="#2AC1BC"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:gravity="center"
-                android:text="로그인"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TableLayout
-                android:background="#FFFFFF"
-                android:stretchColumns="0,1,2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TableRow>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:src="@mipmap/ic_launcher"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp" />
-                        <TextView
-                            android:text="포인트"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:src="@mipmap/ic_launcher"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp" />
-                        <TextView
-                            android:text="포인트"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:src="@mipmap/ic_launcher"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp" />
-                        <TextView
-                            android:text="포인트"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
-                </TableRow>
-                <TableRow>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:src="@mipmap/ic_launcher"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp" />
-                        <TextView
-                            android:text="포인트"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:src="@mipmap/ic_launcher"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp" />
-                        <TextView
-                            android:text="포인트"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:src="@mipmap/ic_launcher"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp" />
-                        <TextView
-                            android:text="포인트"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
-                </TableRow>
-            </TableLayout>
-
-            <LinearLayout
-                android:id="@+id/map_view"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="vertical">
-
-            </LinearLayout>
+            <include layout="@layout/nav_content"/>
         </LinearLayout>
-
     </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>
